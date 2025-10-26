@@ -6,13 +6,9 @@ import com.estudos.notificacao.domain.entity.UserEntity;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 
-@Mapper(
-   componentModel = "spring"
-)
+@Mapper(componentModel = "spring")
 public interface UserMapper {
    UserOutDTO toDTO(UserEntity entity);
-
    UserEntity toEntity(UserInDTO dto);
-
    void updateEntityFromDTO(UserInDTO dto, @MappingTarget UserEntity entity);
 }
