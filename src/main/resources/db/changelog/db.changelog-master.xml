@@ -11,4 +11,7 @@
     <!-- INCLUINDO COLUNA EMAIL -->
     <include file="db/changelog/changes/0.0.2.xml"/>
 
+    <!-- INCLUINDO TABELA NOTIFICATIONS -->
+    <include file="db/changelog/changes/0.0.3.xml"/>
+
 </databaseChangeLog>
