@@ -10,4 +10,5 @@ public interface UserService {
    UserOutDTO findById(Long id);
    void delete(Long id);
    UserOutDTO update(Long id, UserInDTO userDTO);
+   void sendUserCreatedNotification(Object user);
 }
